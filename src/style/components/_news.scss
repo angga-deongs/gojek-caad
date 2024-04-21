@@ -1,0 +1,81 @@
+/* ==========================================================================
+   components: News
+   ========================================================================== */
+
+.news {
+  $n: &;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  &__head {
+    margin-bottom: 48px;
+  }
+  &__ttl {
+    margin-bottom: 8px;
+  }
+  &__desc {
+    margin-bottom: 0;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px 48px;
+  }
+  &__item {
+    flex: 0 0 33.3333333%;
+    padding: 16px 8px;
+  }
+  &__box {
+    position: relative;
+    height: 100%;
+  }
+  &__name {
+    @include font-size(h4-a);
+    margin-bottom: 8px;
+    min-height: 96px;
+    @include multiline-ellipsis(3);
+  }
+  &__date {
+    color: color(silver);
+    margin-bottom: 0;
+  }
+  &__img {
+    position: relative;
+    padding-bottom: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    &__el {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__lnk {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: zi(news-lnk);
+  }
+  &__action {
+    &__lnk {
+      text-decoration: none;
+      color: color(green);
+      font-size: 2.4rem;
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      border: 1px solid color(green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}

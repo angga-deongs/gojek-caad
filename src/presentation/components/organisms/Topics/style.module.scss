@@ -1,0 +1,20 @@
+/* ==========================================================================
+   components: Topics
+   ========================================================================== */
+
+@import "core/styles/_assets.scss";
+
+.topics {
+  padding-top: 80px;
+  padding-bottom: 32px;
+}
+.ttl {
+  text-align: center;
+  margin-bottom: 96px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}

@@ -1,0 +1,39 @@
+/* ==========================================================================
+   components: ForteItem
+   ========================================================================== */
+
+@import "core/styles/_assets.scss";
+
+.card {
+  flex: 0 0 25%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.box {
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  position: relative;
+  background-color: color(black);
+}
+.white {
+  background-color: color(white);
+}
+.img {
+  position: absolute;
+  top: -64px;
+}
+.name {
+  font-size: 24px;
+  line-height: 32px;
+}
+.logo {
+  margin-bottom: 20px;
+  height: 32px;
+}
+.desc {
+  font-size: 18px;
+  line-height: 24px;
+  min-height: 72px;
+  @include multiline-ellipsis(3);
+}

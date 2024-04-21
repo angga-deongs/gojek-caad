@@ -1,0 +1,26 @@
+/* ==========================================================================
+   components: JoinCard
+   ========================================================================== */
+
+@import "core/styles/_assets.scss";
+
+.card {
+  flex: 0 0 33.3333333%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.box {
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  position: relative;
+}
+.img {
+  position: absolute;
+  top: -64px;
+}
+.desc {
+  @include font-size(h6);
+  min-height: 72px;
+  @include multiline-ellipsis(3);
+}

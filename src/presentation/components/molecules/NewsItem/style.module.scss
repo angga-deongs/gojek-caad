@@ -1,0 +1,48 @@
+/* ==========================================================================
+   components: NewsItem
+   ========================================================================== */
+
+@import "core/styles/_assets.scss";
+
+.card {
+  flex: 0 0 33.3333333%;
+  padding: 16px 8px;
+}
+.box {
+  position: relative;
+  height: 100%;
+}
+.name {
+  margin-bottom: 8px;
+  min-height: 96px;
+  @include font-size(h4-a);
+  @include multiline-ellipsis(3);
+}
+.date {
+  color: color(silver);
+  margin-bottom: 0;
+}
+.img {
+  position: relative;
+  padding-bottom: 60%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lnk {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: zi(news-lnk);
+}

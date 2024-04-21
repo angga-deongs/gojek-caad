@@ -1,0 +1,53 @@
+/* ==========================================================================
+   components: Forte
+   ========================================================================== */
+
+@import "core/styles/_assets.scss";
+
+.forte {
+  $f: &;
+  padding-top: 80px;
+  padding-bottom: 140px;
+  background-color: color(black);
+  color: color(white);
+  border-radius: 64px 64px 0 0;
+  margin-top: -96px;
+  position: relative;
+  z-index: zi(forte);
+}
+.red {
+  background-color: color(forte, red);
+  color: color(black);
+  .box {
+    background-color: color(white);
+  }
+}
+.purple {
+  background-color: color(forte, purple);
+  color: color(black);
+  .box {
+    background-color: color(white);
+  }
+}
+.bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.head {
+  margin-bottom: 80px;
+}
+.ttl {
+  margin-bottom: 0;
+}
+.subttl {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.list {
+  display: flex;
+  // margin-left: -16px;
+  // margin-right: -16px;
+  margin-left: -56px;
+  margin-right: -56px;
+}

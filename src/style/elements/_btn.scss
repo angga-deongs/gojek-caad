@@ -1,0 +1,39 @@
+/* ==========================================================================
+   elements: btn
+   ========================================================================== */
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  text-decoration: none;
+  @include remove-tap-highlight;
+  @include font-size(h6);
+  font-weight: fw(semi-bold);
+  transition: all 0.3s ease;
+  &--primary {
+    color: color(white);
+    background-color: color(green);
+    padding: 10px 24px;
+    border-radius: 24px;
+    &:hover {
+      background-color: color(dark-green);
+    }
+  }
+  &--arrow {
+    &:hover {
+      .fi {
+        transform: translateX(4px);
+      }
+    }
+    .fi {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      margin-left: 6px;
+      transition: all 0.3s ease;
+    }
+  }
+}

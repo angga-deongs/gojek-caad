@@ -1,0 +1,77 @@
+/* ==========================================================================
+ Init: Fonts
+ ========================================================================== */
+
+@font-face {
+  font-family: "Maison Neue Book";
+  src: url("../../assets/fonts/MaisonNeue-Book.eot");
+  src: url("../../assets/fonts/MaisonNeue-Book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/MaisonNeue-Book.woff2") format("woff2"),
+    url("../../assets/fonts/MaisonNeue-Book.woff") format("woff"), url("../../assets/fonts/MaisonNeue-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Maison Neue Book";
+  src: url("../../assets/fonts/MaisonNeue-ExtendedBold.eot");
+  src: url("../../assets/fonts/MaisonNeue-ExtendedBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/MaisonNeue-ExtendedBold.woff2") format("woff2"),
+    url("../../assets/fonts/MaisonNeue-ExtendedBold.woff") format("woff"), url("../../assets/fonts/MaisonNeue-ExtendedBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Maison Neue Book";
+  src: url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.eot");
+  src: url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.woff2") format("woff2"),
+    url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.woff") format("woff"), url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gojek-Super-App";
+  src: url("../../assets/fonts/Gojek-Super-App.eot?63yfww");
+  src: url("../../assets/fonts/Gojek-Super-App.eot?63yfww#iefix") format("embedded-opentype"), url("../../assets/fonts/Gojek-Super-App.ttf?63yfww") format("truetype"),
+    url("../../assets/fonts/Gojek-Super-App.woff?63yfww") format("woff"), url("../../assets/fonts/Gojek-Super-App.svg?63yfww#Gojek-Super-App") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.fi {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Gojek-Super-App" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-googleplay:before {
+  content: "\e900";
+}
+.fi-arrow-right:before {
+  content: "\e906";
+}
+.fi-apple:before {
+  content: "\e905";
+}
+.fi-instagram:before {
+  content: "\e901";
+}
+.fi-youtube:before {
+  content: "\e902";
+}
+.fi-twitter:before {
+  content: "\e903";
+}
+.fi-facebook:before {
+  content: "\e904";
+}

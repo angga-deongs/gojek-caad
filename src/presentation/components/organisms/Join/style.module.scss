@@ -1,0 +1,22 @@
+/* ==========================================================================
+   components: Join
+   ========================================================================== */
+
+@import "core/styles/_assets.scss";
+
+.join {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.price {
+  @include font-size(h6);
+}
+.ttl {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.list {
+  display: flex;
+  margin-left: -16px;
+  margin-right: -16px;
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   components: footer
+   ========================================================================== */
+
+.footer {
+  $f: &;
+  background-color: color(black);
+  color: color(white);
+  padding-top: 104px;
+  padding-bottom: 40px;
+  &__logo {
+    margin-bottom: 56px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid color(grey);
+    margin-bottom: 40px;
+  }
+  &__ttl {
+    margin-bottom: 24px;
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__lnk {
+    color: color(white);
+    position: relative;
+    text-decoration: none;
+    &:hover {
+      &::after {
+        transform: none;
+        transform-origin: left center;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      width: 100%;
+      border-bottom: 1px solid color(white);
+      transform-origin: right center;
+      transform: scale(0);
+      transition: transform 0.3s ease;
+    }
+  }
+  &__socmed {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+    }
+    &__item {
+      margin-right: 36px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__lnk {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+    }
+    .fi {
+      font-size: 2.8rem;
+    }
+  }
+  &__copyright {
+    margin-bottom: 0;
+  }
+}
