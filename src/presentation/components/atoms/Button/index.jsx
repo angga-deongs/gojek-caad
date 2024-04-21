@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 // --- Button
 const Button = (props) => {
-  const { to, text, type, icon, variant = "primary" } = props;
+  const { to, text, type, icon } = props;
 
   // --- set variant
   let styleName = style.btn;
