@@ -136,13 +136,13 @@ const Footer = (props) => {
               ) : (
                 <>
                   {val.list.map((socmed, idx) => (
-                    <div className={style.socmed}>
+                    <div className={style.socmed} key={`s-${idx}`}>
                       <h6 className={style.ttl}>{socmed.ttl}</h6>
                       <ul className={style.socmedList}>
                         {socmed.list.map((socmedItem, idx) => (
                           <li className={style.socmedItem} key={`fi-${idx}`}>
                             <a href={socmedItem.to} className={style.socmedLnk} target="_blank" rel="noreferrer">
-                              <i class={socmedItem.icon}></i>
+                              <i className={socmedItem.icon}></i>
                             </a>
                           </li>
                         ))}
