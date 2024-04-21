@@ -6,3 +6,7 @@
 @import "helper/_index";
 @import "base/_index";
 @import "project/_index";
+
+body .react-datepicker {
+  background-color: red;
+}
